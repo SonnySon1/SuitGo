@@ -41,7 +41,7 @@ for (let index = 0; index < playerChoices.length; index++) {
 // get ruls
 function getRuls(playerChoices, computerChoices) {
     if (playerChoices == computerChoices) return "SERI";
-    if(playerChoices == "batu") return (computerChoices == "guning" ? "MENANG" : "KALAH");
+    if(playerChoices == "batu") return (computerChoices == "gunting" ? "MENANG" : "KALAH");
     if(playerChoices == "gunting") return (computerChoices == "kertas" ? "MENANG" : "KALAH");
     if(playerChoices == "kertas") return (computerChoices == "batu" ? "MENANG" :  "KALAH");
     return "memasukan pilihan yang salah"
