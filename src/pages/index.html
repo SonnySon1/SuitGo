@@ -23,13 +23,13 @@
                 </div>
                 <div class="mb-10">
                     <div class="mx-auto p-3 rounded-full text-center bg-white mb-4">
-                        <span>Score Computer: <span id="point-computer" class="font-bold">50</span> point</span>
+                        <span>Score Computer: <span id="computer-score" class="font-bold">0</span> point</span>
                     </div>
                     <div class="bg-white rounded-4xl mx-auto mb-4">
                         <div class="grid grid-cols-1 items-center md:grid-cols-3 text-center w-full p-7">
                             <div>
                                 <div class="w-25 h-25 mx-auto flex items-center justify-content-center">
-                                    <img src="../assets/batu.png" alt="w-full h-full" id="pilihan-computer">
+                                    <img src="../assets/ai.png" alt="w-full h-full" id="computer-choice">
                                 </div>
                                 <div>
                                     <p class="font-bold">Pilihan Computer</p>
@@ -39,11 +39,11 @@
                                 <div class="text-9xl font-jersey">
                                     VS
                                 </div>
-                                <div class="p-1 bg-yellow-200 rounded-full text-2xl font-bold" id="info">Kemu Menang</div>
+                                <div class="p-1 bg-yellow-200 rounded-full text-2xl font-bold" id="info">?</div>
                             </div>
                             <div>
                                 <div class="w-25 h-25 mx-auto flex items-center justify-content-center">
-                                    <img src="../assets/kertas.png" alt="w-full h-full" id="pilihan-player">
+                                    <img src="../assets/ai.png" alt="w-full h-full" id="player-choice">
                                 </div>
                                 <div>
                                     <p class="font-bold">Pilihan Kamu</p>
@@ -53,23 +53,23 @@
                     </div>
                     <div class="mx-auto grid gap-5 grid-cols-2">
                         <div class="p-3 rounded-full text-center bg-white mb-4">
-                            <span>Score Kamu: <span id="point-player" class="font-bold">50</span> point</span>
+                            <span>Score Kamu: <span id="player-score" class="font-bold">0</span> point</span>
                         </div>
                         <div class="p-3 rounded-full text-center bg-white mb-4">
-                            <span>Total Game: <span id="total-game" class="font-bold">20</span>x</span>
+                            <span>Total Game: <span id="total-game" class="font-bold">0</span>x</span>
                         </div>
                     </div>
                 </div>
                 <div class="pb-10 md:pb-0">
-                    <div class="grid grid-cols-3 mx-auto">
-                        <div class="w-25 h-25 md:w-32 md:h-32 bg-white p-5 rounded-full mx-auto cursor-pointer hover:p-0 transition-all ease-in-out" id="batu">
-                            <img src="../assets/batu.png" alt="bg-center w-full h-full">
+                    <div class="grid grid-cols-3 mx-auto" id="arena-player">
+                        <div class="w-25 h-25 md:w-32 md:h-32 bg-white p-5 rounded-full mx-auto cursor-pointer hover:p-0 transition-all ease-in-out">
+                            <img id="batu" src="../assets/batu.png" alt="bg-center w-full h-full">
                         </div>
-                        <div class="w-25 h-25 md:w-32 md:h-32 bg-white p-5 rounded-full mx-auto cursor-pointer hover:p-0 transition-all ease-in-out" id="gunting">
-                            <img src="../assets/gunting.png" alt="bg-center w-full h-full">
+                        <div class="w-25 h-25 md:w-32 md:h-32 bg-white p-5 rounded-full mx-auto cursor-pointer hover:p-0 transition-all ease-in-out">
+                            <img id="gunting" src="../assets/gunting.png" alt="bg-center w-full h-full">
                         </div>
-                        <div class="w-25 h-25 md:w-32 md:h-32 bg-white p-5 rounded-full mx-auto cursor-pointer hover:p-0 transition-all ease-in-out" id="kertas">
-                            <img src="../assets/kertas.png" alt="bg-center w-full h-full">
+                        <div class="w-25 h-25 md:w-32 md:h-32 bg-white p-5 rounded-full mx-auto cursor-pointer hover:p-0 transition-all ease-in-out">
+                            <img id="kertas" src="../assets/kertas.png" alt="bg-center w-full h-full">
                         </div>
                     </div>
                 </div>
@@ -77,6 +77,6 @@
         </div>
     </section>
 
-    <link rel="stylesheet" href="../js/script.js">
+    <script src="../js/script.js"></script>
 </body>
 </html>
